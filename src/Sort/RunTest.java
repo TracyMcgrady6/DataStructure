@@ -4,17 +4,19 @@ package Sort;
  * Created by t-mac on 2017/3/16.
  */
 public class RunTest {
-    public  static void main(String[] args){
-        int[] num={9,4,6,1,3,8,2,4};
-        BubbleSort bs=new BubbleSort();
+    public static void main(String[] args) {
+        int[] num = {9, 4, 6, 1, 3, 8, 2, 4};
+        BubbleSort bs = new BubbleSort();
         //bs.Sort(num);
-        SelectSort ss =new SelectSort();
+        SelectSort ss = new SelectSort();
 //        ss.Sort(num);
-        Insertsort is=new Insertsort();
+        Insertsort is = new Insertsort();
 //        is.Sort(num);
-        ShellSort shell =new ShellSort();
-        shell.Sort(num);
-        for (int i:num){
+        ShellSort shell = new ShellSort();
+//        shell.Sort(num);
+        QuickSort quick=new QuickSort();
+        quick.Sort(num,0,num.length-1);
+        for (int i : num) {
 
             System.out.println(i);
         }
