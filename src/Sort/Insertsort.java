@@ -16,7 +16,7 @@ public class Insertsort {
                     temp = nums[j];
                     nums[j] = nums[j - 1];
                     nums[j - 1] = temp;
-                }else {//不需交换跳出循环
+                } else {//不需交换跳出循环
                     break;
                 }
             }
